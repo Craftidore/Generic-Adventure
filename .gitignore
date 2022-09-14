@@ -1,0 +1,5 @@
+*
+!*.cpp
+!README*
+!.replit
+!.gitignore
