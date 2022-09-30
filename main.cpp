@@ -92,7 +92,12 @@ void beginningOfAdventure () {
 }
 
 void startGame () {
-  elvenCastleIntro();
+  bool keepGoing = true;
+  while (keepGoing) {
+    elvenCastleIntro();
+    cout << endl << "Would you like to play again (yes/no)? ";
+    keepGoing = getYesNo();
+  }
 }
 
 int main() {
